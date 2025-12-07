@@ -16,9 +16,7 @@ let cellIdO = [];
 cells.forEach((e) => e.addEventListener('click', () => {
     if (e.classList.contains('X') || e.classList.contains('O')) {
         alert('Сell occupied')
-        currentPlayer === 'X'
-        ? currentPlayer = 'O'
-        : currentPlayer = 'X';
+        return;
     }
     else {
         e.classList.add(currentPlayer);
